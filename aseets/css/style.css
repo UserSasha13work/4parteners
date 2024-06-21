@@ -309,6 +309,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .home_block h1 {
@@ -327,11 +329,11 @@ h3 {
     flex-direction: column;
     align-items: center;
     gap: 56px;
-
+    padding: 0px 150px 0px 150px;
 }
 
 .pluses {
-    width: 100%;
+    width: calc(100% + 300px);
     padding: 40px 26px 40px 26px;
     background: #1B1B1B;
     color: #8E8E8E;
