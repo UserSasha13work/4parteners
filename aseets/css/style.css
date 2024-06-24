@@ -138,6 +138,14 @@ a {
     text-decoration: none;
 }
 
+
+.landscape{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
 body {
     background: #FAFAFA;
     font-family: "Raleway";
@@ -689,3 +697,26 @@ footer {
    
 }
 }
+
+
+@media screen and (orientation: portrait) {
+    .landscape{
+        display: none;
+       
+    }
+  }
+  
+  /* Для альбомного режима пускай панель отображается слева */
+  
+  @media screen and (orientation: landscape) {
+    .landscape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #9CFF38;
+    }
+    body{
+
+        overflow: hidden;
+    }
+  }
